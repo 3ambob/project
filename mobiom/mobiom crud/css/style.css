@@ -1,0 +1,162 @@
+
+body{
+    background-color: #3d59e8;
+
+    
+}
+.bg-body{
+    background-color: rgb(61,89,232) !important;
+  
+    
+}
+h1 , h3{
+    color: #ccc;
+}
+.line{
+    height: 0.05rem;
+    background-color: #3D59E8;
+}
+@media screen and (min-width: 768px){
+    .table{
+        width: 100% !important;
+        /* margin: auto !important; */
+    }
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3d59e8;
+    z-index: 99999;
+  }
+  
+  .load-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  .load-circle span:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    border-color: #ffffff transparent #ffffff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  
+  @keyframes lds-dual-ring {
+    0% {
+  
+        transform: rotate(0deg);
+    }
+    100% {
+   
+        transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  .container::after{
+    content: "";
+  position: absolute;
+  left: -200px;
+  bottom: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 25%;
+  background: #1e1e1e63;
+  opacity: 0.1;
+  transition: ease all 0.5s;
+  animation: scale 20s linear infinite;
+  
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+  
+    25% {
+      transform: scale(0.8) rotate(45deg);
+    }
+  
+    50% {
+      transform: scale(0.9) rotate(90deg);
+    }
+  
+    75% {
+      transform: scale(0.8) rotate(45deg);
+    }
+  
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+}
+.container::after,
+.container::before{
+    content: "";
+      position: absolute;
+      left: -200px;
+      bottom: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 25%;
+      background: #1e1e1e63;
+      opacity: 0.1;
+      transition: ease all 0.5s;
+      animation: scale 20s linear infinite;
+     
+ }
+
+ .container:before {
+    left: auto;
+    top: -200px;
+    bottom: auto;
+    right: -200px;
+    
+  }
+
+  
+    
+  @media screen and (max-width: 768px){
+    
+    th{
+      font-size: 7px;
+      text-align: center;
+      left: -26px;
+      position: relative;
+    }
+  }
+  
+
+  .form-control {
+    z-index: 1;
+    position: relative;
+  }
+  .buttons{
+    z-index: 1;
+    position: relative;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover{
+    color:rgba(255, 255, 255, 0.34);
+  }

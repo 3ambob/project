@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Mobium subscription</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+
+ <!-- Loading -->
+  <div id="loading">
+   <div class="load-circle"><span class="one"></span></div>
+ </div>
+ <!-- / -->
+
+      <header class="container pt-4 pb-3">
+         <h1 class="fs-2 fw-bold">Mobium subscription</h1>
+      </header>
+      
+      <div class="line w-100 mt-2 mb-3"></div>
+
+      <section class="container">
+         <div class="bg-body py-5 text-center">
+      
+            <input  id="sName" type="text"  placeholder="Subscription Name.." class="form-control mb-2 w-75 mx-auto">
+            <div id="alertName" class="alert alert-danger p-2 w-75 mx-auto d-none">Capital letter and 2-10 small letter</div>
+
+            <input  id="sPrice" type="number"  placeholder="Subscription Price.." class="form-control mb-2 w-75 mx-auto">
+            <div id="alertPrice" class="alert alert-danger p-2 w-75 mx-auto d-none">Range is from 1-10000 $</div>
+
+            <input  id="sCat" type="text"  placeholder="Subscription Category.." class="form-control mb-2 w-75 mx-auto">
+            <div id="alertCate" class="alert alert-danger p-2 w-75 mx-auto d-none">Same as Subscription Name</div>
+
+            <textarea id="sDesc" placeholder="Subscription Description.." style="resize:none;" class="form-control mb-2 w-75 mx-auto"></textarea>
+            
+
+            <div class="buttons w-75 mx-auto">
+               <div class="row g-0">
+                  <div class="col-6 text-start">
+                     <button class="btn btn-primary mt-3 p-2" id="updateBtn">Update Subscription</button>
+                  </div>
+                  <div class="col-6 text-end">
+                     <button class="btn btn-primary mt-3 me-2 p-2" id="resetBtn">Reset</button>
+                     <button class="btn btn-primary mt-3 p-2" id="addBtn">Add Subscription</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="w-75 mx-auto">
+               <table table class="table table-striped mt-4 text-center">
+                  <thead>
+                     <th>index</th>
+                     <th>Subscription Name</th>
+                     <th>Subscription Price</th>
+                     <th>Subscription Category</th>
+                     <th>Subscription Description</th>
+                     <th>Update</th>
+                     <th>Delete</th>
+                  </thead>
+                  <tbody id="myTable">
+                     
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </section>
+
+      <div class="line w-100 my-3"></div>
+
+      <footer class="container py-3 text-center">
+         
+         <h3 class="fs-6 fw-bold">&copy; Mobium subscription</h3>
+     
+         <button  class="bg-success btn  mt-3 p-2" id="addBtn"><a href="../index.html">Home (Mobiom Homepage)</a></button>
+      </footer>
+
+      
+      <script src="js/script.js"></script>
+       <!-- Jquery -->
+      <script src="..\static\js\jquery-3.6.4.min.js"></script>
+      <script src="..\static/js/custom.js"></script>
+ 
+
+
+
+      
+   </body>
+</html>
+
+
+
